@@ -52,6 +52,11 @@ export default {
 </script>
 
 <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -78,6 +83,8 @@ export default {
 
 .lista-header ul a{
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
     color: #000;
     font-weight: bold;
     margin-left: 1rem;
