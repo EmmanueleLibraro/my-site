@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="header">
+        <div class="header container">
             <a href="#">
                 <img src="@/assets/img/dc-logo.png" alt="Logo DC">
             </a>
@@ -52,19 +52,28 @@ export default {
 </script>
 
 <style>
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 .header{
     display: flex;
     align-items: center;
-    width: 100%;
+    flex-basis: 100%;
     padding: 1rem;
     font-family: sans-serif;
 }
 
+.lista-header{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 100%;
+}
+
 .lista-header ul{
     display: flex;
-    justify-content: end;
     list-style: none;
-    width: 100%;
 }
 
 .lista-header ul a{
