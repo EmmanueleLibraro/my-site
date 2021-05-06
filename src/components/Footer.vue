@@ -107,6 +107,33 @@
                         </div>
                </div>
             </div>
+
+            <!-- BTN FOOTER/SOCIAL LINKS -->
+            <div class="linea-footer">
+                <div class="container links"> 
+                    <div class="btn">
+                        <button>Sign-Up Now!</button>
+                    </div>
+
+                    <div class="social-list">
+                        <div class="follow">
+                            <h2>Follow Us</h2>
+                        </div>
+                        
+                        <div class="socials">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="@/assets/img/footer-facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -122,6 +149,8 @@ export default {
 <style>
 .back-footer{
     background-image: url("../assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: sans-serif;
 }
 
@@ -168,6 +197,48 @@ padding-top: 1rem;
     text-transform: none;
 }
 
+/* BTN/SOCIAL LINKS */
+.linea-footer{
+    height: 100px;
+    width: 100%;
+    background: #303030;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    flex-basis: 100%;
+
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn button{
+    padding: 1rem;
+    background: #303030;
+    outline: none;
+    border: 2px solid #0c7cec;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.btn button:hover{
+    background: #0c7cec;
+}
+
+.follow,
+.socials{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
